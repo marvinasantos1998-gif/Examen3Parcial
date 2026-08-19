@@ -52,7 +52,7 @@ with tab2:
 if img_file_buffer is not None and modelo_cargado:
     # Cargar y mostrar la imagen original
     image = Image.open(img_file_buffer)
-    st.image(image, caption='Imagen a analizar', use_column_width=True)
+    st.image(image, caption='Imagen a analizar', use_container_width=True)
 
     with st.spinner("La IA está analizando la imagen..."):
         # Preprocesar la imagen para que coincida con el input de CIFAR-10 (32x32 píxeles)
