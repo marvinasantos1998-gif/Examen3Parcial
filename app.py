@@ -81,11 +81,3 @@ if img_file_buffer is not None and modelo_cargado:
     with col2:
         st.info(f"**Confianza:** {confidence:.2f}")
 
-# Breve documentación en la barra lateral
-st.sidebar.header("Documentación")
-st.sidebar.info(
-    "Esta aplicación web utiliza un modelo básico de Machine Learning (Red Neuronal Convolucional) "
-    "entrenado mediante Google Colab con el dataset CIFAR-10. "
-    "Tiene la capacidad de clasificar imágenes en 10 categorías distintas: "
-    "aviones, autos, pájaros, gatos, ciervos, perros, ranas, caballos, barcos y camiones."
-)
